@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2875414945333630211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 188027134081695816}
+  - component: {fileID: 4384818030838220689}
+  m_Layer: 0
+  m_Name: World Item Database
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &188027134081695816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2875414945333630211}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4384818030838220689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2875414945333630211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1436ab73bb72def42ba483f4c1034c5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: []
+  headEquipment:
+  - {fileID: 11400000, guid: 11f36c61037eec642951258178fdd07d, type: 2}
+  - {fileID: 11400000, guid: 8c95aec154d9cbe46a8f75534f1b7c4e, type: 2}
+  chestEquipment:
+  - {fileID: 11400000, guid: e6b68ff9c42999d489b01f5a0755772c, type: 2}
+  legEquipment:
+  - {fileID: 11400000, guid: 1e1c34ecb225990418f3d26766b5a0d7, type: 2}
+  handEquipment:
+  - {fileID: 11400000, guid: 9109b15055ff76248b9f708f3f66d2dc, type: 2}
+  feetEquipment:
+  - {fileID: 11400000, guid: a6d2ccd53fdb0d641a1ab6347c03d17f, type: 2}
+  accessories: []
+  weaponItemKey: 10000
+  headItemKey: 20000
+  chestItemKey: 30000
+  legItemKey: 40000
+  handItemKey: 50000
+  feetItemKey: 60000
+  accessoryItemKey: 70000

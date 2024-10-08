@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a2cc9c21ba2f414c87492ecc4e055f1, type: 3}
+  m_Name: TestTunic
+  m_EditorClassIdentifier: 
+  itemID: 30000
+  itemName: 
+  itemIcon: {fileID: 0}
+  itemDescription: 
+  price: 0
+  evasion: 0
+  magicalMight: 0
+  magicalMending: 0
+  deftness: 0
+  agility: 0
+  defense: 0
+  equipmentModels:
+  - {fileID: 11400000, guid: 4348103888d1bbe4198336530cdfb232, type: 2}
+  - {fileID: 11400000, guid: 7f2acef3b4025254b9e17bc37d9b3041, type: 2}
+  - {fileID: 11400000, guid: a8d4514595e4d034e88ddbd4ee5fc4be, type: 2}
