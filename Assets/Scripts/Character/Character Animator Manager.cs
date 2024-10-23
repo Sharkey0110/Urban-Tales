@@ -18,6 +18,4 @@ public class CharacterAnimatorManager : MonoBehaviour
         character.animator.SetFloat("Horizontal", horizontalMovement, 0.1f, Time.deltaTime);
         character.animator.SetFloat("Vertical", verticalMovement, 0.1f, Time.deltaTime);
     }
-
-    //we will need a perform action animation and use the isperformingaction to stop players from moving or doing anything else if they are emoting or picking up item most likely
 }

@@ -125,9 +125,9 @@ public class PlayerInputManager : MonoBehaviour
     private void HandleAllInputs()
     {
         HandleMenuInput();
-        if (PlayerUIManager.Instance.isMenuWindowOpen) return;
-
         HandlePlayerMovementInput();
+
+        if (isMenuOpen) return;
         HandleCameraMovementInput();
 
     }
@@ -142,7 +142,11 @@ public class PlayerInputManager : MonoBehaviour
 
         moveAmount = Mathf.Clamp01(Mathf.Abs(verticalMovement) + Mathf.Abs(horizontalMovement));
 
-        if(moveAmount <= 0.5 && moveAmount > 0)
+        if(isMenuOpen)
+        {
+            moveAmount = 0;
+        }
+        else if(moveAmount <= 0.5 && moveAmount > 0)
         {
             moveAmount = 0.5f;
         }
@@ -173,12 +177,11 @@ public class PlayerInputManager : MonoBehaviour
             {
                 isMenuOpen = false;
                 PlayerUIManager.Instance.playerMenuManager.CloseCharacterMenu();
-
             }
             else
             {
-                PlayerUIManager.Instance.playerMenuManager.OpenCharacterMenu();
                 isMenuOpen = true;
+                PlayerUIManager.Instance.playerMenuManager.OpenCharacterMenu();
             }
         }
     }

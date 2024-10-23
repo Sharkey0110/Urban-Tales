@@ -51,8 +51,12 @@ public class PlayerLocomotionManager : CharacterLocomotionManager
     //called on player manager update
     public void HandleAllMovements()
     {
-        if (player.isPerformingAction) return;
-        if (PlayerUIManager.Instance.isMenuWindowOpen) return;
+        if (player.isPerformingAction || PlayerUIManager.Instance.isMenuWindowOpen)
+        {
+            player.characterController.Move(Vector3.zero);
+            return;
+        }
+
         HandleFreeFallMovement();
         HandleGroundedMovement();
         HandleRotation();
